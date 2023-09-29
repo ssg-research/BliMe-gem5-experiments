@@ -9,7 +9,6 @@ set gem5_config [lindex $argv 1]
 set diskimg [lindex $argv 2]
 
 spawn tmux new-session -t $tmux_run
-expect "asokan-platsec-01"
 expect "$ "
 send "build/RISCV/gem5.opt $gem5_config --diskimg $diskimg\r"
 

@@ -8,6 +8,8 @@ usage(){
 
 [[ $# -lt 4 ]] && usage
 
+set -x
+
 GEM5_ROOTDIR=$(realpath -e $1)
 DISK_IMG=$(realpath -e $2)
 GEM5_CONFIG=$(realpath -e $3)
